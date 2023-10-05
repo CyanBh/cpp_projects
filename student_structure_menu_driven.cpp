@@ -25,32 +25,67 @@ int main()
     
     cin>> val;
 
-    
-    switch (val) 
-        {
-        case 1:
-            cout<<"1 lol"<<endl;
-            break;
- 
-        case 2:
-            cout<<"2 lol"<<endl;
-            break;
- 
-        case 3:
-            cout<<"3 lol"<<endl;
-            break;
+    do 
+    {
+       process_select(val);
+    }while(val); 
+} 
 
-        case 4:
-            cout<<"4 lol"<<endl;
-            break;
- 
-        default:
-            cout<<"default lol"<<endl;
-            break;
+int process_select(int n)
+{
+ switch (n) 
+        {
+            case 1:
+                cout<<"1 lol"<<endl;
+                break;
+    
+            case 2:
+                cout<<"2 lol"<<endl;
+                break;
+    
+            case 3:
+                cout<<"3 lol"<<endl;
+                break;
+
+            case 4:
+                cout<<"4 lol"<<endl;
+                break;
+
+            case 5:
+                cout<<"5 lol"<<endl;
+                break;
+
+            case 6:
+                cout<<"quitting"<<endl;
+                return 0;
+    
+            default:
+                cout<<"Choose a valid option"<<endl;
+                break;
         }
 }
 
 void create_new_record()
 {
-new Student
+
+}
+
+void display_record()
+{
+
+}
+
+void search_by_id()
+{
+
+}
+
+void show_average_marks()
+{
+
+}
+
+void show_highest_marks_in_subject()
+{
+
 }
