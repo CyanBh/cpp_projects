@@ -41,7 +41,7 @@ void find_area(float a, float b, float c)//area of triangle using length of side
 	cout<<"\nThe area of the triangle is: "<< area <<" square metres"<< endl;
 }
 
-void show_menu()
+void show_menu()//shows the initial menu on startup
 {
 	
 	cout << "\nEnter 1 to calculate the area of a circle."<<endl;
@@ -122,7 +122,7 @@ void choice_manager(int n)//displays output according to chosen user input
 bool prompt_user() //ask the user if they wish to continue
 {
 	char c;
-	cout<<"\nDo you wish to continue (y/n)?";	
+	cout<<"\nDo you wish to continue (y/n)? ";	
 	cin>>c;
 	if (c == 'y'||c == 'Y')
 		{
