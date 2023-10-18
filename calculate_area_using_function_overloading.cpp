@@ -37,7 +37,7 @@ void find_area(float a, float b, float c)//area of triangle using length of side
 
 
 	s = 0.5*(a + b + c);
-	area = pow ((s * (s-a) * (s-b) * (s-c)) , 0.5);
+	area = sqrt(s * (s-a) * (s-b) * (s-c));
 	cout<<"\nThe area of the triangle is: "<< area <<" square metres"<< endl;
 }
 

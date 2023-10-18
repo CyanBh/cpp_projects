@@ -23,7 +23,7 @@ int main(){
     Area obj;
     int choice;
     float r, b, h, a, c;
-    int l;
+    int l, br;
     do{
         cout<<"\n\n\nEnter your choice:\n1. Area of Circle\n2. Area of Triangle (base and height)\n3. Area of Triangle (three sides)\n4. Area of Rectangle\n5. Exit"<<endl;
         cin>>choice;
@@ -45,8 +45,8 @@ int main(){
                 break;
             case 4:
                 cout<<"Enter length and breadth of rectangle: ";
-                cin>>l>>b;
-                obj.calculateArea(l,b);
+                cin>>l>>br;
+                obj.calculateArea(l,br);
                 break;
             case 5:
                 exit(0);

@@ -15,7 +15,7 @@ student s[100];
 int n = 0;
 
 void create_student() {
-    cout << "Enter student ID: ";
+    cout << "\nEnter student ID: ";
     cin >> s[n].student_id;
     cout << "Enter student name: ";
     cin >> s[n].name;
@@ -31,7 +31,7 @@ void create_student() {
 }
 
 void display_student(int i) {
-    cout << "Student ID: " << s[i].student_id << endl;
+    cout << "\nStudent ID: " << s[i].student_id << endl;
     cout << "Student Name: " << s[i].name << endl;
     cout << "Student Age: " << s[i].age << endl;
     cout << "Math Marks: " << s[i].math_marks << endl;
@@ -56,7 +56,7 @@ void display_average_marks() {
         english_total += s[i].english_marks;
         science_total += s[i].science_marks;
     }
-    cout << "Average Math Marks: " << math_total / n << endl;
+    cout << "\nAverage Math Marks: " << math_total / n << endl;
     cout << "Average English Marks: " << english_total / n << endl;
     cout << "Average Science Marks: " << science_total / n << endl;
 }
@@ -71,7 +71,7 @@ void display_highest_marks() {
             index = i;
         }
     }
-    cout << "Highest Marks: " << highest_marks << endl;
+    cout << "\nHighest Marks: " << highest_marks << endl;
     cout << "Subject with Highest Marks: ";
     if (s[index].math_marks > s[index].english_marks && s[index].math_marks > s[index].science_marks) {
         cout << "Math" << endl;
@@ -87,7 +87,7 @@ void display_highest_marks() {
 int main() {
     int choice, id;
     do {
-        cout << "Menu" << endl;
+        cout << "\nMenu\n" << endl;
         cout << "1. Create Student Record" << endl;
         cout << "2. Display Student Record" << endl;
         cout << "3. Search Student by ID" << endl;
