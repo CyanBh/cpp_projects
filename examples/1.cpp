@@ -7,17 +7,21 @@ int main()
     string *ptr2[5]; 
     cout << "Enter five names:-"; 
     for(int i=0;i<5;i++)
-    {
-        cin >> ptr1[i];
-    }
+        {
+            cin >> ptr1[i];
+        }
+
     for(int i=0;i<5;i++)
-    {
-        ptr2[i]=&ptr1[i];
-    }
+        {
+            ptr2[i]=&ptr1[i];
+        }
+
     cout << "The names are:-"; 
     for(int i=0;i<5;i++)
-    {
-        cout << *ptr2[i] << endl;
-    }
+        {
+            cout << *ptr2[i] << endl;
+        }
+
     return 0;
-    }
+
+}
