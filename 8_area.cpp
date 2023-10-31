@@ -4,7 +4,7 @@ using namespace std;
 
 class Area{
     public:
-        void calculateArea(float r){
+        void perimeter(float r){
             cout<<"Area of Circle: "<<3.14*r*r<<endl;
         }
         void calculateArea(float b, float h){
@@ -14,7 +14,7 @@ class Area{
             float s=(a+b+c)/2;
             cout<<"Area of Triangle: "<<sqrt(s*(s-a)*(s-b)*(s-c))<<endl;
         }
-        void calculateArea(int l, int b){
+        void perimeter(int l, int b){
             cout<<"Area of Rectangle: "<<l*b<<endl;
         }
 };
@@ -31,7 +31,7 @@ int main(){
             case 1:
                 cout<<"Enter radius of circle: ";
                 cin>>r;
-                obj.calculateArea(r);
+                obj.perimeter(r);
                 break;
             case 2:
                 cout<<"Enter base and height of triangle: ";
@@ -46,7 +46,7 @@ int main(){
             case 4:
                 cout<<"Enter length and breadth of rectangle: ";
                 cin>>l>>br;
-                obj.calculateArea(l,br);
+                obj.perimeter(l,br);
                 break;
             case 5:
                 exit(0);
