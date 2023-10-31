@@ -6,7 +6,7 @@ int main()
 	int row,col;
 	cout<<"Enter size of row: ";
 	cin>>row;
-	cout<<"Enter size of coloumn: ";
+	cout<<"Enter size of column: ";
 	cin>>col;
 	
 	int a[row][col],b[row][col],i,j,k,choice,sum[row][col],diff[row][col],prod[row][col],trans[col][row];

@@ -9,12 +9,14 @@ class Shape
         Shape(float radius)
         {
             this->radius = radius;
+            cout<<"Constructor called"<<endl;
         }
 
         Shape(float length, float breadth)
         {
             this->length = length;
             this->breadth = breadth;
+            cout<<"Constructor called"<<endl;
         }
 
         ~Shape()
