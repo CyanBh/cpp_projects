@@ -36,7 +36,7 @@ protected:
     float math,english,physics,chemistry,biology,computer;
 
 public:
-    set_e()
+    void set_e()
     {
         set_s();
         cout<<"Enter marks in Mathematics: ";
@@ -53,7 +53,7 @@ public:
         cin>>computer;
     }
 
-    get_e()
+    void get_e()
     {
         get_s();
         cout<<"Marks in Mathematics: "<<math      <<endl
@@ -71,7 +71,7 @@ class Result:public Exam
     float result;
 
 public:
-    get_r()
+    void get_r()
     {
         get_s();
         result = math+english+physics+chemistry+biology+computer;
